@@ -25,3 +25,26 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// http://blog.csdn.net/qq_14997169/article/details/53148100
+
+ext {
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+
+    targetSdkVersion = 26
+    //主程序版本
+    minSdkVersion = 16
+    versionCode = 1
+    versionName = "1.0"
+
+    //library版本用
+    library_minSdkVersion = 16
+    library_targetSdkVersion = 26
+    library_versionCode = 1
+    library_versionName = "1.0.0"
+
+    root_v4 = 'com.android.support:support-v4:26.0.2'
+    root_v7 = 'com.android.support:appcompat-v7:26.0.2'
+    root_design = 'com.android.support:design:26.0.2'
+}
